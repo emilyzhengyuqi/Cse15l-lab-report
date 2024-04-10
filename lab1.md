@@ -6,7 +6,7 @@ There will be no output with this input. By using the cd command, we change the 
 Since there is no argument followed by cd in this case, then the working directory will not be changed, which is still /Users/amily in this case. 
 The absolute path to the working directory right before the command was run is /Users/amily
 
-**2.cd with a path directory: output is not en error**
+**2.cd with a path to a directory: output is not an error**
 
 No output for this command because it simply changes the working directory to the absolute path I entered, which is /Users/amily/Desktop.
 The absolute path to the working directory before the command run is /Users/amily
