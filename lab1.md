@@ -3,7 +3,7 @@
 **1.`cd` with no argument: output is not an error**
 
 There will be no output with this input. By using the `cd` command, we change the current working directory to the directory followed by `cd`.
-In here, I started from directory different than home directory. Thus, if I run `cd` without commands, it will take me to the home directory, which is `/Users/amily` in this case. The absolute path to the working directory before the command was run is `/Users/amily/Desktop/lecture1-main`
+In here, I started from directory different than home directory. Thus, if I run `cd` without commands, it will take me to the home directory, which is `/Users/amily` in this case. The absolute path to the working directory before the command was run is `/Users/amily/Desktop/lecture1-main`.
 
 **2.`cd` with a path to a directory: output is not an error**
 
