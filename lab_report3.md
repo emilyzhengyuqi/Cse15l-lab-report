@@ -53,7 +53,7 @@ static void reverseInPlace(int[] arr) {
   }
 ```
 
-
+![Image](lab_re3_5.png)
 -After fix:
 
 
@@ -76,6 +76,8 @@ public class ArrayExamples {
     return newArray;
   }
 ```
+![Image](lab_re3_4.png)
+
 
 **5 comment on fixing the issue**
 
