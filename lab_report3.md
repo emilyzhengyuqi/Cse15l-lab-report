@@ -1,5 +1,5 @@
 # Part1
-**1. failure-inducing input:
+**1. failure-inducing input:**
 ```public class ArrayTests {
   @Test 
    public void testReverseInPlace() {
@@ -9,7 +9,7 @@
  }
 ```
 
-**2. input that does not induce error:
+**2. input that does not induce error:**
 ```@Test
   public void testReversed() {
     int[] input1 = { };
@@ -18,11 +18,11 @@
 ```
 
 
-**3. symptom
+**3. symptom**
 ![Image](lab_re3_1.png)
 ![Image](lab_re3_2.png)
 
-**4. bug
+**4. bug**
 
 
 -Previous:
@@ -64,9 +64,11 @@
   }
 ```
 
-**5
+**5 comment on fixing the issue**
+
+
 This issue with previous code is method `reverseInPlace` because it is assigning value to itself. Thus, elements in `arr` will be mixed up during the process of re-assigning. We need to create a new array called `newArray` in this code to hold the reversed order of `arr` through calling method `reversed`. Then, we can assign the elements in `newArray` to `arr` to change the input array in reversed order. Then the tests should pass. See below
-![Image]()
+![Image](lab_re3_6.png)
 
 # Part2
 `grep` is a command for searching specific content within a file system.
@@ -114,7 +116,13 @@ amily@Yuqis-MBP docsearch % grep -h "PLANES" ./technical/911report/chapter-5.txt
 ```
 `grep -h` will suppress the display of filename that matches the word if we input multiple files. It will only display the matching line.
 
+Acknowledgement of sources I used for part 2:
 
+
+https://www.geeksforgeeks.org/grep-command-in-unixlinux/
+
+
+https://docs.rackspace.com/docs/use-the-linux-grep-command
 
 
 
