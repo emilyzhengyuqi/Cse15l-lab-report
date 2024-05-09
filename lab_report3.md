@@ -2,24 +2,24 @@
 **1. failure-inducing input:**
 
 
-```public class ArrayTests {
-  @Test 
+`public class ArrayTests {
+  @Test
    public void testReverseInPlace() {
     int[] input1 = {3,2};
     ArrayExamples.reverseInPlace(input1);
     assertArrayEquals(new int[]{2,3}, input1);
  }
-```
+`
 
 **2. input that does not induce error:**
 
 
-```@Test
+`@Test
   public void testReversed() {
     int[] input1 = { };
     assertArrayEquals(new int[]{ }, ArrayExamples.reversed(input1));
   }
-```
+`
 
 
 **3. symptom**
@@ -31,15 +31,13 @@
 
 -Previous:
 
-
-```  // Changes the input array to be in reversed order
-  static void reverseInPlace(int[] arr) {
+`static void reverseInPlace(int[] arr) {
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = arr[arr.length - i - 1];
     }
-  }
-
-  // Returns a *new* array with all the elements of the input array in reversed
+  }`
+  
+`// Returns a *new* array with all the elements of the input array in reversed
   // order
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
@@ -47,13 +45,13 @@
       arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
-  }
-```
+  }`
+
 
 -After fix:
 
 
-```public class ArrayExamples {
+`public class ArrayExamples {
   // Changes the input array to be in reversed order
   static void reverseInPlace(int[] arr) {
     int[] newArray = ArrayExamples.reversed(arr);
@@ -70,7 +68,7 @@
     }
     return newArray;
   }
-```
+`
 
 **5 comment on fixing the issue**
 
