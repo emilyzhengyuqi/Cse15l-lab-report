@@ -10,9 +10,8 @@ After we execute the above code, `statement` will be changed to `jpolitz: hello`
 
 
 # Part2
-Below is the screenshot after I use `ssh` to connect to the remote server without typing the password and the output after I use `ls` with private and public keys
-![Image](lab2login.png)
-![Image](lab2keys.png)
+Below is the screenshot after I use `ssh` to connect to the remote server without typing the password and the output after I use `ls` with private and public keys. It also include several preparation steps that I use to find the location for private and public key before I use `ls` command.
+![Image](lab2_resub.png)
 
 # Part3
 During week2 and week 3 lab activities, I started to learn how to connect my device to a remote device. This provides huge convenienve for programmer as now we have the chance to run the program in other environments. Also, I learner how to use `curl` to get the content of an URL.
